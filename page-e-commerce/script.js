@@ -40,6 +40,7 @@ function toggleCart(e) {
     e.preventDefault();
     $cartContent.classList.toggle("active");
 }
+
 function addToCart() {
     const getCarts =  JSON.parse(localStorage.getItem('carts'));
     if(in_array(getCarts, article.id)){
